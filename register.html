@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Register</title>
+	</head>
+	<style>
+		p{
+			margin:3px;
+		}
+	</style>
+	<body>
+		<h1  style="font-family:MingLiU;">使用者註冊</h1>
+		
+		<form method="post" autocomplete="on">
+			<p>
+				<label>帳號
+					<input type="text" id="accountId" placeholder="請輸入您的帳號" style="margin-left:32px;"/>
+				</label>
+			</p>
+			<p>
+				<label>密碼
+					<input type="password" id="password" style="margin-left:32px;"/>
+				</label>
+			</p>
+			<p>
+				<label>電子郵件
+					<input type="email" id="email" placeholder="請輸入您的電子郵件"/>
+				</label>
+			</p>
+			<p>
+				<label>生日
+					<input type="date"  id="birthday" style="margin-left:32px;"/>
+				</label>
+			</p>
+			<p>
+				<label>性別</label>
+				<label style="margin-left:32px;">
+					<input type="radio" value="male" name="gender_list" checked/>男
+				</label>
+				<label>
+					<input type="radio" value="female" name="gender_list" />女
+				</label>
+				<label>
+					<input type="radio" value="another" name="gender_list" />其他
+				</label>
+			</p>
+			<p>
+				<label>喜好</label>
+				<label style="margin-left:32px;">
+					<input type="checkbox" value="playball" name="like_list"/>打球
+				</label>
+				<label>
+					<input type="checkbox" value="playgame" name="like_list"/>打電動
+				</label>
+				<label>
+					<input type="checkbox" value="shopping" name="like_list"/>購物
+				</label>
+				<label>
+					<input type="checkbox" value="another" name="like_list"/>其他
+				</label>
+			</p>
+			<p>
+				<label>年級
+					<select name="class" style="margin-left:32px;">
+						<option selected>大一</option>
+						<option>大二</option>
+						<option>大三</option>
+						<option>大四</option>
+						<option>大五</option>
+					</select>
+				</label>
+			</p>
+			<p>
+				<input type="submit" value="送出" style="margin-left:69px;"/>
+				<input type="reset" value="重設" />
+			</p>
+		</form>
+	</body>
+</html>
